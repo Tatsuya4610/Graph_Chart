@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/all.dart';
-import 'package:graph_chart_flutter/screen/home_screen.dart';
+import 'package:graph_chart_flutter/screen/graph_screen.dart';
+import 'package:graph_chart_flutter/screen/chart_screen.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: GraphScreen(),
+      routes: {
+        ChartScreen.id : (context) => ChartScreen(),
+      },
     );
   }
 }

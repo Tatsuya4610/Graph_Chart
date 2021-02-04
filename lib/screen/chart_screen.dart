@@ -5,7 +5,8 @@ import 'package:graph_chart_flutter/widgets/sidbar.dart';
 
 final data = [55.0, 90.0, 50.0, 40.0, 35.0, 70.0, 100.0];
 
-class HomeScreen extends StatelessWidget {
+class ChartScreen extends StatelessWidget {
+  static const id = 'ChartScreen';
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -114,7 +115,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Padding(
                             padding:
-                                const EdgeInsets.symmetric(horizontal: 15.0),
+                            const EdgeInsets.symmetric(horizontal: 15.0),
                             child: Text(
                               '100',
                               style: TextStyle(
@@ -152,7 +153,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Padding(
                             padding:
-                                const EdgeInsets.symmetric(horizontal: 15.0),
+                            const EdgeInsets.symmetric(horizontal: 15.0),
                             child: Text(
                               '100',
                               style: TextStyle(
