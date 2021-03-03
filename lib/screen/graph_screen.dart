@@ -28,17 +28,17 @@ class _GraphScreenState extends State<GraphScreen> {
     double _opacity = 0.9;
 
     void _addTransaction() {
-      setState(() {
-        _height = 0.08;
-        _opacity = 1;
-      });
+      // setState(() {
+      //   _height = 0.08;
+      //   _opacity = 1;
+      // });
     }
 
     void _done() {
-      setState(() {
-        _height = 0.55;
-        _opacity = 0.9;
-      });
+      // setState(() {
+      //   _height = 0.55;
+      //   _opacity = 0.9;
+      // });
     }
 
     return Scaffold(
